@@ -68,32 +68,60 @@ This package contains a `requirements.txt` file with all the dependencies that n
 
 You are now ready to use the QNPy package.
 
-Special note: If you have python >3.9 on your local machine you will encounter some requirements conflicts with torch and numpy versions. In this case, we recomend creating a virtual enviroment using conda:
+Special note: If you have python >3.9 on your local machine you will encounter some requirements conflicts with torch and numpy versions. In this case, we recommend creating a virtual environment using conda:
 
 .. code-block:: bash
 
     conda create -n myenv python=3.9
 
-then you have to activate the virtuel enviroment:
+then you have to activate the virtual environment:
 
 .. code-block:: bash
 
     conda activate "The name of your virtuel enviroment"
 
-After virtual enviroment is activated you can install QNPy and the requirements.txt file in your newly created enviroment.
+After the virtual environment is activated you can install QNPy and the requirements.txt file in your newly created environment.
 
-.. code-block:: virtual enviroment
+.. code-block:: virtual environment
 
     pip install QNPy
 
-.. code-block:: virtual enviroment
+.. code-block:: virtual environment
 
     pip install -r requirements.txt
+
+History of the code
+===================
+
+**Foundation code** - made by Iva Cvorovic, a PhD student under the mentorship of dr Andjelka Kovacevic. Publication: 
+
+**Modularisation** - done by Nikola Andric Mitrovic within the LSST DLE project, led by dr Andjelka Kovacevic and dr Dragana Ilic. Publication:
+
+**Packaging, Testing and Improvement** - made by dr Marina Pavlovic who oversaw packaging-led testing and improved modules for better functionality. Testing was done by Iva Cvorovic and Aman Raju. Publications:
+
+**Modules expansion and Enhancement** - data augmentation, visualization and initial SOM module made by dr Andjelka Kovacevic. Publication:
+
+**SOM Expansion and Enhancement** - done by master student Aman Raju who upgraded the SOM and performed testing as a guest student.
+
+**Testing** Dragana Ilic within COST Action MW GAIA STSM 2023, Marina Pavlovic, Aman Raju, Iva Cvorovic-Hajdinjak, Damir Bogdan, Teodora Velimirovic, Sofija Markovic within interdisciplinary master studies led by Andjelka Kovacevic.
+
+The first version of the QNPy contains modules for modeling the quasar's light curves using CNP without clustering the light curves. This version was released on October 16th, 2023 and can be installed using: 
+
+.. code-block:: bash
+
+    pip install QNPy==0.0.1
+
+In the second version of the package we implemented the module for clustering the light curves using SOM algorithm. This version was released on March 25th 2024 and can be installed using:
+
+.. code-block:: bash
+
+    pip install QNPy==0.0.2
+
 
 Examples
 ========
 
-Check out the `Tutorial` folder [here](https://github.com/kittytheastronaut/QNPy-0.0.2) for notebooks that guide you through the process of using this package. There will be teo tutorial folders. The "QNPy without clustering: Tutorial" folder includes examples for using each of the modules separately. Additionally, you'll find an example of how your light curves should look in the `Light_curves` folder. The "QNPy with clustering: Tutorial" folder includes examples for using the Clustering_with_SOM module for single band and multiband clustering. You will also find example of how your light curves should look like in the folders `Light_curves` and `Light_curves_Multiband`.
+Check out the `Tutorial` folder [here](https://github.com/kittytheastronaut/QNPy-0.0.2) for notebooks that guide you through the process of using this package. There will be teo tutorial folders. The "QNPy without clustering: Tutorial" folder includes examples for using each of the modules separately. Additionally, you'll find an example of how your light curves should look in the `Light_curves` folder. The "QNPy with clustering: Tutorial" folder includes examples of using the Clustering_with_SOM module for single band and multiband clustering. You will also find examples of how your light curves should look in the folders `Light_curves` and `Light_curves_Multiband`.
 
 Folder Structure
 ================
